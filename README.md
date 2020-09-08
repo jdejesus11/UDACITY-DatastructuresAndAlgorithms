@@ -1,4 +1,2 @@
-AUTHOR: JUAN CARLOS DE JESUS
-
-PROGRAM: Udacity nanodegree - Datastructures and algorithms.
+Data structures and algorithms. Udacity nanodegree.
 
