@@ -1,0 +1,17 @@
+DESCRIPTION:
+    1. This algorithm has many parts:
+        1.1 Time complexity of encoding:
+            Nodes are kept in an min heap data structures, which let operates over it efficiently
+                1.1.1 Average time complexity: E(1) = constant, except pop operation, which needs to
+                      check if child nodes are ordered or not.
+                1.1.2 Bulding a Huffman tree takes H(1) = constant
+                1.1.3 Looking for leaf nodes to build binary code takes O(n) = constant time
+                1.1.4 Building frequency table takes = F(n) = n * O(1) = linear time
+            In Average, time complexity O(n) = F(n) + m * E(1) + m * H(1) where m = # items in frequency table.
+                        0(n) = n = Linear time
+            
+        1.2 Time complexity of decoding:
+            average case:
+            O(n) = n (iterate each bit from binary data) * O(TreeHeigth) = n * TreeHeigth
+            worst case:
+            O(n) = n + n = m (linear time)
